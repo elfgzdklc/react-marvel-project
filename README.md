@@ -43,5 +43,5 @@ npm test
 ```
 
 ## Deployment
-This project is deployed using [Vercel](https://vercel.com/). You can view the live version of the project [here](vercel-project-url).
+This project is deployed using [Vercel](https://vercel.com/). You can view the live version of the project [here](https://react-marvel-project.vercel.app/).
 
