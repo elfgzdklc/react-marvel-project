@@ -56,7 +56,7 @@ export default function DetailPage(props) {
                 <div className="header text-wrap">{character.name}</div>
                 <div className="content scrollable-div">{character.description}</div>
                 <div className="image">
-                    <Image loader={imageLoader} loading={"eager"} priority width="300" height="100" className="d-flex justify-items-center image-detail" src={`https://${character.thumbnail?.path}.${character.thumbnail?.extension}`} alt={`comic_${character.name}`} />
+                    <Image loader={imageLoader} loading={"eager"} priority width="300" height="100" className="d-flex justify-items-center image-detail" src={`https://${character.thumbnail?.path.replace(/^https?:\/\//, '')}.${character.thumbnail?.extension}`} alt={`comic_${character.name}`} />
                 </div>
             </div>
             <div className="comics-card">
@@ -65,7 +65,7 @@ export default function DetailPage(props) {
                         {characterComics.map((comic, index) => (
                             <li className="member co-funder" style={{ '--comicContent': `"${comic.format}"` }} key={`comic_${comic.id}`}>
                                 <div className="thumb">
-                                    <Image loader={imageLoader} loading={"eager"} priority width="300" height="100" className="d-flex justify-items-center image-detail" src={`https://${comic.thumbnail?.path}.${comic.thumbnail?.extension}`} alt={`comic_${comic.name}`} />
+                                    <Image loader={imageLoader} loading={"eager"} priority width="300" height="100" className="d-flex justify-items-center image-detail" src={`https://${comic.thumbnail?.path.replace(/^https?:\/\//, '')}.${comic.thumbnail?.extension}`} alt={`comic_${comic.name}`} />
                                 </div>
                                 <div className="description">
                                     <h3>{comic.title}</h3>
