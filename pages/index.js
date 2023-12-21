@@ -74,7 +74,7 @@ export default function Index() {
                                                 onMouseLeave={() => setIsHovered(false)}
                                                 onClick={() => window.open(`/details/${item.id}`, '_blank')}>
                                                 <Image loader={imageLoader} loading={"eager"} priority width="300" height="100" className='img-fluid-custom'
-                                                    src={`${item.thumbnail?.path}/standard_fantastic.${item.thumbnail?.extension}`} alt={`item_${item.name}`}
+                                                    src={`https://${item.thumbnail?.path}/standard_fantastic.${item.thumbnail?.extension}`} alt={`item_${item.name}`}
                                                 />
                                                 <div className='red-line' />
                                                 <div className="card-body m-bg-dark pb-5 mb-5">
