@@ -1,7 +1,7 @@
 import axios from 'axios';
 import md5 from 'md5';
 
-const API_BASE_URL = 'http://gateway.marvel.com/v1/public';
+const API_BASE_URL = 'https://gateway.marvel.com/v1/public';
 const MARVEL_PUBLIC_KEY = process.env.MARVEL_PUBLIC_KEY;
 const MARVEL_PRIVATE_KEY = process.env.MARVEL_PRIVATE_KEY;
 const TIMESTAMP = Date.now();
